@@ -1,22 +1,18 @@
-import { Button, Text, View } from "react-native";
-import Layout from "../../layout/layout";
+import { Text, View } from "react-native";
+
+import { IError } from "../../interfaces";
+
 import { error } from "../../styles/styles";
 
-interface IError {
-  message: string
-  buttonTitle: string,
-  onPress: () => void,
-}
+import Button from "../Button";
 
-export default function Error({ message, onPress, buttonTitle } : IError) {
+export default function Error({ message, onPressFunc } : IError) {
   return (
-    <Layout>
-      <View style={error.container}>
-        <Text style={error.message} >
-          {message}
-        </Text>
-        <Button title={buttonTitle} onPress={() => onPress()} />
-      </View>
-    </Layout>
+    <View style={error.container}>
+      <Text style={error.message} >
+        {message}
+      </Text>
+      <Button buttonText='Permitir acesso' onPressFunc={onPressFunc} />
+    </View>
   )
 }
