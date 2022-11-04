@@ -31,7 +31,7 @@ export default function App() {
   }
 
   useEffect(() => {
-    isCameraPermission()
+    // isCameraPermission()
   }, [])
 
   if(hasPermision === false) {

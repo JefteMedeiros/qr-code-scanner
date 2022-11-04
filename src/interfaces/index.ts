@@ -1,3 +1,5 @@
+import { ReactNode } from "react"
+
 export interface IScanned {
   data: string
 }
@@ -11,6 +13,7 @@ export interface IButton {
   onPressFunc?: () => void
   buttonText: string
   btnMarginTop?: number
+  icon?: ReactNode
 }
 
 export interface IScanner {

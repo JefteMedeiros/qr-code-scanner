@@ -60,6 +60,9 @@ export const scanner = StyleSheet.create({
 
 export const button = StyleSheet.create({
   container: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: '#6d289b',
     borderRadius: 10,
     padding: 10,
