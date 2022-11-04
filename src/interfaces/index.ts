@@ -1,5 +1,4 @@
 export interface IScanned {
-  type: string
   data: string
 }
 
@@ -17,6 +16,6 @@ export interface IButton {
 export interface IScanner {
   scanned: boolean
   data: string
-  handleCheckScanned: ({type, data}: IScanned) => void
+  handleCheckScanned: ({data}: IScanned) => void
   scanAgain: () => void
 }

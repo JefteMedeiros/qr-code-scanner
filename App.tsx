@@ -25,10 +25,9 @@ export default function App() {
     })()
   }
 
-  const handleCheckScanned = ({ type, data }: IScanned) => {
+  const handleCheckScanned = ({ data }: IScanned) => {
     setScanned(true)
     setText(data)
-    console.log('Type: ' + type + '\n' + 'Data:' + data)
   }
 
   useEffect(() => {

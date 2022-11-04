@@ -12,7 +12,7 @@ export default function Error({ message, onPressFunc } : IError) {
       <Text style={error.message} >
         {message}
       </Text>
-      <Button buttonText='Permitir acesso' onPressFunc={onPressFunc} />
+      <Button btnMarginTop={25} buttonText='Permitir acesso' onPressFunc={onPressFunc} />
     </View>
   )
 }
