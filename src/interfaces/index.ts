@@ -11,11 +11,12 @@ export interface IError {
 export interface IButton {
   onPressFunc?: () => void
   buttonText: string
+  btnMarginTop?: number
 }
 
 export interface IScanner {
   scanned: boolean
   data: string
   handleCheckScanned: ({type, data}: IScanned) => void
-  onPressFunc: () => void
+  scanAgain: () => void
 }

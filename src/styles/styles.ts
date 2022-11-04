@@ -37,7 +37,7 @@ export const error = StyleSheet.create({
 })
 
 export const scanner = StyleSheet.create({
-  title: {
+  text: {
     fontSize: 20,
     padding: 30,
     paddingBottom: 40,
@@ -55,7 +55,7 @@ export const scanner = StyleSheet.create({
     borderRadius: 10,
     width: 300,
     height: 300,
-  }
+  },
 })
 
 export const button = StyleSheet.create({

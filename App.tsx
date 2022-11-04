@@ -14,7 +14,8 @@ export default function App() {
   const [text, setText] = useState('Ainda não escaneado')
 
   const handleSetScanned = () => {
-    setScanned(!scanned)
+    setScanned(false)
+    setText('Ainda não escaneado')
   }
 
   const isCameraPermission = () => {
@@ -48,7 +49,7 @@ export default function App() {
   return (
     <Layout>
       <Scanner
-        onPressFunc={handleSetScanned}
+        scanAgain={handleSetScanned}
         data={text}
         scanned={scanned}
         handleCheckScanned={handleCheckScanned}
